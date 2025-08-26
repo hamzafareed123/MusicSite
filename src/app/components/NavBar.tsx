@@ -23,7 +23,8 @@ function NavBar({ className }: { className?: string }) {
         
         <Menu setActive={setActive}>
           <Link href="/">
-            <MenuItem setActive={setActive} active={active} item="Home" />
+            <MenuItem setActive={setActive} active={active} item="Home"  className="text-sm sm:text-base md:text-lg" />
+            
           </Link>
 
           <MenuItem setActive={setActive} active={active} item="Our Courses">

@@ -16,17 +16,22 @@ export const MenuItem = ({
   active,
   item,
   children,
+  className, // ✅ accept className
 }: {
   setActive: (item: string) => void;
   active: string | null;
   item: string;
   children?: React.ReactNode;
+  className?: string; // ✅ make it optional
 }) => {
   return (
-    <div onMouseEnter={() => setActive(item)} className="relative ">
+    <div
+      onMouseEnter={() => setActive(item)}
+      className={`relative ${className ?? ""}`} // ✅ apply className
+    >
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-black text-xl hover:opacity-90 dark:text-white "
+        className="cursor-pointer text-black text-xl hover:opacity-90 dark:text-white"
       >
         {item}
       </motion.p>
@@ -41,7 +46,7 @@ export const MenuItem = ({
             <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 -translate-x-1/2 pt-4">
               <motion.div
                 transition={transition}
-                layoutId="active" // smooth animation between active states
+                layoutId="active"
                 className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/20 dark:border-white/20 shadow-xl"
               >
                 <motion.div layout className="w-max h-full p-4">
