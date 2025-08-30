@@ -25,13 +25,13 @@ function Contact() {
             <input
               type="email"
               placeholder="Your Email"
-              className="w-[350px] sm:w-[350px] md:w-[450px] lg:w-[600px] text-lg px-4 py-4 border border-gray-600 rounded-lg focus:ring-2 focus:outline-none"
+              className="w-[350px] sm:w-[350px] md:w-[450px] lg:w-[600px] text-lg px-4 py-4 border border-gray-600 rounded-lg focus:ring-2 focus:outline-none text-white"
             />
 
             <textarea
               placeholder="Your Message"
               rows={5}
-              className="w-[350px] sm:w-[350px] md:w-[450px] lg:w-[600px] text-lg px-4 py-4 border border-gray-600 rounded-lg focus:ring-2 focus:ring-[#049f6b] focus:outline-none resize-none"
+              className="text-white w-[350px] sm:w-[350px] md:w-[450px] lg:w-[600px] text-lg px-4 py-4 border border-gray-600 rounded-lg focus:ring-2 focus:ring-[#049f6b] focus:outline-none resize-none"
             />
 
             <button
