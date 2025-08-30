@@ -49,7 +49,7 @@ function Footer() {
 
       </div>
       
-  \
+  
       <div className="border-t border-gray-700 mt-8 pt-6 text-center text-sm">
     © {new Date().getFullYear()} Design by Hamza Fareed
       </div>
