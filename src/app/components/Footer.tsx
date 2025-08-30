@@ -1,3 +1,5 @@
+import { Link } from "lucide-react";
+
 function Footer() {
   return (
     <div className="bg-black text-gray-400 py-12">
@@ -15,29 +17,29 @@ function Footer() {
           <h1 className="text-white text-lg font-bold mb-4">Quick Links</h1>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="/" className="hover:text-white">
+              <Link href="/" className="hover:text-white">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about" className="hover:text-white">
+              <Link href="/about" className="hover:text-white">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/services" className="hover:text-white">
+              <Link href="/services" className="hover:text-white">
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/blog" className="hover:text-white">
+              <Link href="/blog" className="hover:text-white">
                 Blog
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-white">
+              <Link href="/contact" className="hover:text-white">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -46,49 +48,49 @@ function Footer() {
           <h1 className="text-white text-lg font-bold mb-4">Follow Us</h1>
           <ul className="space-y-2 text-sm">
             <li>
-              <a
+              <Link
                 href="https://facebook.com"
                 target="_blank"
                 className="hover:text-white"
               >
                 Facebook
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="https://twitter.com"
                 target="_blank"
                 className="hover:text-white"
               >
                 Twitter
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="https://instagram.com"
                 target="_blank"
                 className="hover:text-white"
               >
                 Instagram
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="https://linkedin.com"
                 target="_blank"
                 className="hover:text-white"
               >
                 LinkedIn
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="https://youtube.com"
                 target="_blank"
                 className="hover:text-white"
               >
                 YouTube
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -98,15 +100,15 @@ function Footer() {
           <ul className="space-y-2 text-sm">
             <li>
               Email:{" "}
-              <a href="mailto:info@company.com" className="hover:text-white">
+              <Link href="mailto:info@company.com" className="hover:text-white">
                 info@company.com
-              </a>
+              </Link>
             </li>
             <li>
               Phone:{" "}
-              <a href="tel:+123456789" className="hover:text-white">
+              <Link href="tel:+123456789" className="hover:text-white">
                 +92 333444457
-              </a>
+              </Link>
             </li>
             <li>Address: 123 Street, Tech City</li>
           </ul>
